@@ -10,6 +10,7 @@
         "ext-curl": "*",
         "ext-gd": "*",
 		"ext-intl": "*",
+		"ext-bcmath" : "*",
         "ext-mbstring": "*"
     },
 	"require-dev": {
