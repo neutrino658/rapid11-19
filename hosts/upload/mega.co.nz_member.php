@@ -1,8 +1,8 @@
 <?php
 ######## Account Info ########
 /* Warning: Login uses a lot of CPU, make sure to upload at least 1 file in your account with this plugin for saving account data before adding it here.*/
-$upload_acc['mega_co_nz']['user'] = 'neutrino651@gmail.com'; //Set your email
-$upload_acc['mega_co_nz']['pass'] = 'sob7anallah'; //Set your password
+$upload_acc['mega_co_nz']['user'] = ''; //Set your email
+$upload_acc['mega_co_nz']['pass'] = ''; //Set your password
 ########################
 
 $chunk_UL = false; // Set to true to upload only 1 encrypted chunk per request to mega. (Switch to true when you are getting many Data sending errors)
@@ -13,6 +13,7 @@ $not_done = true;
 $T8 = array('seqno' => mt_rand(), 'sid' => '');
 
 echo "<center>Mega.co.nz plugin by <b>Th3-822</b></center><br />\n"; // Please, do not remove or change this line contents. - Th3-822
+if (!extension_loaded('mcrypt') || !in_array('rijndael-128', mcrypt_list_algorithms(), true)) html_error("Mcrypt module isn't installed or it doesn't have support for the needed encryption.");
 
 // OpenSSL is Much Faster (Only Works Since 5.4)
 if (version_compare(PHP_VERSION, '5.4.0', '>=') && extension_loaded('openssl') && in_array('AES-128-CBC', openssl_get_cipher_methods(), true)) {
