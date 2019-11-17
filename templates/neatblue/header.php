@@ -31,4 +31,4 @@ if ($GLOBALS['options']['flist_sort']) { echo '<script src="classes/sorttable.js
 <script type="text/javascript">function toggle(b){var a=document.getElementById(b);if(a.style.display=="none"){a.style.display="block"}else{a.style.display="none"}};</script>
 </head>
 <body>
-<header><a href="https://dr-rapid.herokuapp.com/index.php"><img src="templates/neatblue/images/logo_pm.gif" height="62" width="369" alt="rapidleech neatblue"></a></header><br />
+<header><a href="./index.php"><img src="templates/neatblue/images/logo_pm.gif" height="62" width="369" alt="rapidleech neatblue"></a></header><br />
