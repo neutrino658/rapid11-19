@@ -14,5 +14,10 @@
     },
 	"require-dev": {
 		"heroku/heroku-buildpack-php": "*"
+	},
+	"scripts": {
+		"compile": [
+			"chmod -R 777 rar/",
+			"chmod -R 777 rar/*"]
 	}
 }
