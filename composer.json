@@ -10,8 +10,5 @@
         "ext-curl": "*",
         "ext-gd": "*",
         "ext-mbstring": "*"
-    },
-  "scripts": {
-    "post-install-cmd" : "./post-install.sh"
-  }
+    }
 }
