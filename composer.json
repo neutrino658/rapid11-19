@@ -10,7 +10,6 @@
         "ext-curl": "*",
         "ext-gd": "*",
 		"ext-intl": "*",
-		"aws/aws-sdk-php": "^3.21",
         "ext-mbstring": "*"
     },
 	"require-dev": {
