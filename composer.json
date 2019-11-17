@@ -1,6 +1,6 @@
 {
     "require": {
-        "php": ">=5.6",
+        "php": ">=7.1",
         "ext-PDO": "*",
         "ext-pdo_mysql": "*",
         "ext-mysqli": "*",
@@ -9,8 +9,13 @@
         "ext-openssl": "*",
         "ext-curl": "*",
         "ext-gd": "*",
+		"ext-intl": "*",
+		"aws/aws-sdk-php": "^3.21",
         "ext-mbstring": "*"
     },
+	"require-dev": {
+		"heroku/heroku-buildpack-php": "*"
+	},
 	"scripts": {
 		"post-install-cmd" : "./post-install.sh"
 	}
