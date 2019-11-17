@@ -1,14 +1,18 @@
 {
-    "require": {
-        "php": ">=5.6",
-        "ext-PDO": "*",
-        "ext-pdo_mysql": "*",
-        "ext-mysqli": "*",
-        "ext-xml": "*",
-        "ext-json": "*",
-        "ext-openssl": "*",
-        "ext-curl": "*",
-        "ext-gd": "*",
-        "ext-mbstring": "*"
-    }
+  "name": "serl/ttrss-heroku",
+  "description": "Tiny Tiny RSS on Heroku, and it's actually working!",
+  "require": {
+    "php": "^7.3.0",
+    "ext-mbstring": "*",
+    "ext-gd": "*",
+    "ext-pcntl": "*",
+    "ext-intl": "*",
+    "aws/aws-sdk-php": "^3.21"
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  },
+  "scripts": {
+    "post-install-cmd" : "./post-install.sh"
+  }
 }
