@@ -6,12 +6,12 @@ if (!defined('RAPIDLEECH')) {
 $options = array (
   'secretkey' => '',
   'download_dir' => 'files/',
-  'download_dir_is_changeable' => false,
+  'download_dir_is_changeable' => true,
   'delete_delay' => 0,
   'rename_prefix' => '',
   'rename_suffix' => '',
   'rename_underscore' => false,
-  'bw_save' => false,
+  'bw_save' => true,
   'file_size_limit' => 0,
   'auto_download_disable' => false,
   'auto_upload_disable' => false,
@@ -54,9 +54,9 @@ $options = array (
   'disable_list' => false,
   'use_curl' => true,
   'redir' => true,
-  'no_cache' => false,
-  'ref_check' => false,
-  '2gb_fix' => true,
+  'no_cache' => true,
+  'ref_check' => true,
+  '2gb_fix' => false,
   'forbidden_filetypes' => 
   array (
     0 => '.htaccess',
