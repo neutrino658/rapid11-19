@@ -1,6 +1,6 @@
 {
     "require": {
-        "php": ">=7.1",
+        "php": ">=5.6",
         "ext-PDO": "*",
         "ext-pdo_mysql": "*",
         "ext-mysqli": "*",
@@ -9,18 +9,6 @@
         "ext-openssl": "*",
         "ext-curl": "*",
         "ext-gd": "*",
-		"ext-intl": "*",
-		"ext-bcmath" : "*",
-		"ext-mcrypt" : "*",
         "ext-mbstring": "*"
-    },
-	"require-dev": {
-		"heroku/heroku-buildpack-php": "*"
-	},
-	"scripts": {
-		"compile": [
-			"chmod -R 777 rar/",
-			"chmod -R 777 rar/*"
-			]
-	}
+    }
 }
