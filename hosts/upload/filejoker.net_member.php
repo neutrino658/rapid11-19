@@ -58,7 +58,7 @@ if (empty($_REQUEST['action']) || $_REQUEST['action'] != 'FORM') {
 		if (stripos($page, "name=\"$tmpName\" value=\"") !== false && ($tmp = cut_str($page, "name=\"$tmpName\" value=\"", '"'))) $post["$tmpName"] = $tmp;
 	}
 	$post['link_pass'] = $post['link_rcpt'] = '';
-	$post['file_descr'] = 'Uploaded with Rapidleech.';
+	$post['file_descr'] = 'Uploaded with hello.';
 	$post['file_public'] = '1';
 	$post['tos'] = '1';
 	$post['submit_btn'] = ' Upload! ';

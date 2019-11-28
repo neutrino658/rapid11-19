@@ -56,7 +56,7 @@ if (empty($_REQUEST['action']) || $_REQUEST['action'] != 'FORM') {
 	$post['Filename'] = $lname;
 	$post['folder_id'] = '-1';
 	$post['direct_link'] = $post['secure'] = 'null';
-	$post['desc'] = 'Uploaded with Rapidleech.';
+	$post['desc'] = 'Uploaded with hello.';
 	$post['SESSID'] = $sid[1];
 	$post['Upload'] = 'Submit Query';
 

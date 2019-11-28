@@ -6,14 +6,14 @@
 @h@		as it's used by many plugins.
 @h@		- Th3-822
 */
-if (!defined('RAPIDLEECH')) exit;
+if (!defined('hello')) exit;
 
 // Check include
 if (!isset($_T8) || !is_array($_T8) || empty($_T8['domain']) || $_T8['domain'] == 'domain.tld' || empty($_T8['v'])) {
 	if (strtolower(basename(__FILE__)) == strtolower($page_upload[$_REQUEST['uploaded']])) html_error('This plugin can\'t be called directly.');
 	html_error('Error: Called from non configured plugin "' . htmlentities($page_upload[$_REQUEST['uploaded']]) . '".');
 }
-if ($_T8['v'] > 9) html_error('Error: '.basename(__FILE__).' is outdated, please install last version from: http://rapidleech.com/forum/viewtopic.php?f=17&t=80 or http://pastebin.com/E0z7qMU1 ');
+if ($_T8['v'] > 9) html_error('Error: '.basename(__FILE__).' is outdated, please install last version from: http://hello.com/forum/viewtopic.php?f=17&t=80 or http://pastebin.com/E0z7qMU1 ');
 
 /* # Default Settings # */
 $default = array();
@@ -129,7 +129,7 @@ if (!$_T8['xfsFree'] && (empty($_REQUEST['action']) || $_REQUEST['action'] != 'F
 			if (stripos($page, "name=\"$tmpName\" value=\"") !== false && ($tmp = cut_str($page, "name=\"$tmpName\" value=\"", '"'))) $post["$tmpName"] = $tmp;
 		}
 		$post['link_pass'] = $post['link_rcpt'] = '';
-		$post['file_descr'] = 'Uploaded with Rapidleech.';
+		$post['file_descr'] = 'Uploaded with hello.';
 		$post['file_public'] = '1';
 		$post['tos'] = '1';
 		$post['submit_btn'] = ' Upload! ';

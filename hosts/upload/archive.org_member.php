@@ -122,13 +122,13 @@ if (empty($_REQUEST['action']) || $_REQUEST['action'] != 'FORM') {
 	} else if ($status == 404) {
 		$bucketExists = $bucket = false;
 		$uploadHeaders['x-archive-auto-make-bucket'] = '1';
-		$uploadHeaders['x-archive-meta-submitter'] = 'Rapidleech';
+		$uploadHeaders['x-archive-meta-submitter'] = 'hello';
 		if (!empty($_REQUEST['is_test_item'])) {
 			$uploadHeaders['x-archive-meta-description'] = $uploadHeaders['x-archive-meta-subject'] = 'test item';
 			$uploadHeaders['x-archive-meta-collection'] = 'test_collection';
 		} else {
-			$uploadHeaders['x-archive-meta-description'] = 'Uploaded with Rapidleech';
-			$uploadHeaders['x-archive-meta-subject'] = 'Rapidleech';
+			$uploadHeaders['x-archive-meta-description'] = 'Uploaded with hello';
+			$uploadHeaders['x-archive-meta-subject'] = 'hello';
 		}
 		if (!empty($_REQUEST['up_mediatype']) && in_array($_REQUEST['up_mediatype'], $media_types)) {
 			$uploadHeaders['x-archive-meta-mediatype'] = $_REQUEST['up_mediatype'];

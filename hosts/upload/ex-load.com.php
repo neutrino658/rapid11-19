@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) exit;
+if (!defined('hello')) exit;
 $_T8 = array('v' => 4); // Version of this config file. (Do Not Edit)
 
 /* # Plugin's Settings # */
@@ -46,7 +46,7 @@ function SendLogin($post) {
 	return $page;
 }
 
-if (!file_exists(HOST_DIR . 'upload/GenericXFSHost.inc.php')) html_error('Cannot load "'.htmlentities(HOST_DIR).'upload/GenericXFSHost.inc.php" (File doesn\'t exists), please install lastest version from: http://rapidleech.com/forum/viewtopic.php?f=17&t=80 or http://pastebin.com/E0z7qMU1 ');
+if (!file_exists(HOST_DIR . 'upload/GenericXFSHost.inc.php')) html_error('Cannot load "'.htmlentities(HOST_DIR).'upload/GenericXFSHost.inc.php" (File doesn\'t exists), please install lastest version from: http://hello.com/forum/viewtopic.php?f=17&t=80 or http://pastebin.com/E0z7qMU1 ');
 require(HOST_DIR . 'upload/GenericXFSHost.inc.php');
 
 // Written by Th3-822 - Last Update: [15-5-2015]

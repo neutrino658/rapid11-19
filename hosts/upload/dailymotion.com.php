@@ -114,7 +114,7 @@ if ($continue_up) {
                 "video_title"=>$title,
                 "user_category"=>"shortfilms",
                 "tags"=>"clip " . $title,
-                "description"=>"Upload by rapidleech",
+                "description"=>"Upload by hello",
                 "privacy"=>"public",
                 "allow_comments"=>"1",
                 "allow_in_group"=>"1",
