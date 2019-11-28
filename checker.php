@@ -1,5 +1,5 @@
 <?php
-define ( 'RAPIDLEECH', 'yes' );
+define ( 'hello', 'yes' );
 define ( 'CONFIG_DIR', 'configs/' );
 require_once(CONFIG_DIR.'setup.php');
 define ( 'TEMPLATE_DIR', 'templates/'.$options['template_used'].'/' );
@@ -7,9 +7,9 @@ require_once('classes/other.php');
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-<head><title>Rapidleech Checker Script</title>
+<head><title>Checker Script</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link title="Rapidleech Style" href="<?php echo TEMPLATE_DIR; ?>styles/rl_style_pm.css" rel="stylesheet" type="text/css" />
+<link title="Style" href="<?php echo TEMPLATE_DIR; ?>styles/rl_style_pm.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <?php
@@ -87,7 +87,7 @@ if (function_exists('apache_get_version')) {
 	}
 }
 ?>
-<center><img src="<?php echo TEMPLATE_DIR; ?>images/logo_pm.gif" alt="RapidLeech PlugMod" border="0" /></center>
+<center><img src="<?php echo TEMPLATE_DIR; ?>images/logo_pm.gif" alt="PlugMod" border="0" /></center>
 <br />
 <table border="0" width="100%" align="center">
 	<tr>

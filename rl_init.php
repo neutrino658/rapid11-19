@@ -15,19 +15,19 @@ header('X-Accel-Buffering: no');
 clearstatcache();
 error_reporting(6135);
 $nn = "\r\n";
-$fromaddr = 'RapidLeech';
+$fromaddr = 'hello';
 $dev_name = 'Development Stage';
 $rev_num = '43';
 $plusrar_v = '4.2';
 $PHP_SELF = $_SERVER['SCRIPT_NAME'];
-define('RAPIDLEECH', 'yes');
+define('hello', 'yes');
 define('ROOT_DIR', realpath('./'));
 define('PATH_SPLITTER', ((strpos(ROOT_DIR, '\\') !== false) ? '\\' : '/'));
 define('HOST_DIR', 'hosts/');
 define('CLASS_DIR', 'classes/');
 define('CONFIG_DIR', 'configs/');
 define('BUILD', '30May2011');
-define('CREDITS', '<a href="http://www.rapidleech.com/" class="rl-link"><b>RapidLeech</b></a>&nbsp;<b class="rev-dev">PlugMod (eqbal) rev. ' . $rev_num . '</b> <span class="rev-dev">' . $dev_name . '</span><br><small class="small-credits">Credits to Pramode &amp; Checkmate &amp; Kloon</small>');
+define('CREDITS', '<a href="http://www.hello.com/" class="rl-link"><b>hello</b></a>&nbsp;<b class="rev-dev">PlugMod (eqbal) rev. ' . $rev_num . '</b> <span class="rev-dev">' . $dev_name . '</span><br><small class="small-credits">Credits to Pramode &amp; Checkmate &amp; Kloon</small>');
 
 require_once(CONFIG_DIR . 'setup.php');
 

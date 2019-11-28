@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 set_time_limit(0);
-define('RAPIDLEECH', 'yes');
+define('hello', 'yes');
 define('CLASS_DIR', 'classes/');
 define('CONFIG_DIR', 'configs/');
 require_once(CONFIG_DIR."config.php");

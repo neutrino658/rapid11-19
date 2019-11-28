@@ -1,4 +1,4 @@
-Rapidleech PlugMod (by eqbal)
+hello PlugMod (by eqbal)
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 
 ====================================
@@ -25,7 +25,7 @@ Rev. 42 - 19 Mar 2011
 [PLUGIN] Added some newly made plugins(Baking, kaox, Raj Malhotra)
 [PLUGIN] Removed some died sites plugins(Raj Malhotra)
 [FIX]Little security fix ,to file downloaded RL not show more the full file path
-[SECURITY] WARNING: Bug found due to the insert_location() function (download system) which reveals premium cookies and base_64 encoded auth-strings to end user(s). The premium accounts of rapidleech servers providing premium-account downloads to public, are in danger of having their premium accounts compromised! Private rapidleech servers are safe for now, but are strongly encouraged to upgrade
+[SECURITY] WARNING: Bug found due to the insert_location() function (download system) which reveals premium cookies and base_64 encoded auth-strings to end user(s). The premium accounts of hello servers providing premium-account downloads to public, are in danger of having their premium accounts compromised! Private hello servers are safe for now, but are strongly encouraged to upgrade
 [SECURITY] Standard auth system for premium accounts is put in place, any premium plugins not adhering to the new standard will either be compromised, or won't work with the new system. Premium account data using base64 authorisation are no longer passed via the insert_location function, instead they are retrieved internally
 [SECURITY] New premium cookie encryption system implemented (due to the complexity of cookie system and to keep load on 3rd-party servers to a minimum, cookies are encrypted instead, and then decrypted when needed)
 [SECURITY] New $secretkey in accounts.php, which is used for cookie encryption. A standard key is included, but you must create your own random string, max 56 characters in length
@@ -60,7 +60,7 @@ Rev. 41 - 28 June 2009
 [FEATURE] Removed the add directory option when zipping files
 [BUG] Fixed adding non-existent zip file when creation of zip file failed
 [BUG] Fixed adding extra entry when zip file already present.
-[FIX #0000037] Fixed zip features make zip file in "rapidleech" directory not in "files" directory
+[FIX #0000037] Fixed zip features make zip file in "hello" directory not in "files" directory
 [PLUGIN] Added uploaded.to member upload plugin
 [FIX] Fixed filefactory.com_member upload plugin
 [PLUGIN] Added in several of kaox's plugins and replaced some older versions with new
@@ -128,7 +128,7 @@ Rev. 38 - 05/09/2009
 +server and local times synchronised, fixed formatting
 +various http.php download function improvements
 +index.php redirects updated for case insensitive location: redirects
-+fixed a js/progressbar problem when uploading a file containing an apostrophe (') [see http://bugs.rapidleech.com/view.php?id=13]
++fixed a js/progressbar problem when uploading a file containing an apostrophe (') [see http://bugs.hello.com/view.php?id=13]
 +auul.php updated for ' in filenames (use base64 instead)
 +some minor .htaccess updates
 +some minor css updates
