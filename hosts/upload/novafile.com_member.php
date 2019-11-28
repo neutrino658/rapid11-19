@@ -65,7 +65,7 @@ if (empty($_REQUEST['action']) || $_REQUEST['action'] != 'FORM') {
 	$post['sess_id'] = cut_str($page, 'name="sess_id" value="', '"');
 	$post['utype'] = cut_str($page, 'name="utype" value="', '"');
 	$post['srv_tmp_url'] = cut_str($page, 'name="srv_tmp_url" value="', '"');
-	$post['file_0_descr'] = 'Uploaded by Rapidleech.';
+	$post['file_0_descr'] = 'Uploaded by hello.';
 	$post['tos'] = 1;
 	$post['submit_btn'] = 'Upload';
 

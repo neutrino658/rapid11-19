@@ -9,7 +9,7 @@
 	$url = parse_url($uploc);
 	is_notpresent($url['query'],'tmp_sid','Error[1]: Plugin Update Required');
 	$sid = cut_str($url['query'],'tmp_sid=','&');
-	$post = array('imbedded_progress_bar'=>'1','upload_range'=>'1','email'=>'','filecomment'=>'Uploaded with Rapidleech');
+	$post = array('imbedded_progress_bar'=>'1','upload_range'=>'1','email'=>'','filecomment'=>'Uploaded with hello');
 	echo "<script type='text/javascript'>document.getElementById('info').style.display='none';</script>\n";
 	$upfiles = upfile($url['host'],0,$url['path'].($url["query"] ? "?".$url["query"] : ""),'http://www.load.to/',0,$post,$lfile,$lname,'upfile_0','');
 	is_page($upfiles);

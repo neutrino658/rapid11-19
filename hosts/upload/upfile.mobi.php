@@ -28,7 +28,7 @@ else {
 	<tr><td style='white-space:nowrap;'>&nbsp;Password*</td><td>&nbsp;<input type='password' name='up_pass' value='' style='width:160px;' /></td></tr>\n";
 	echo "<tr><td colspan='2' align='center'><br />Upload options<br /><br /></td></tr>
 	<tr><td style='white-space:nowrap;'>File Password:</td><td>&nbsp;<input type='text' name='T8[passw]' value='' style='width:160px;' /></td></tr>
-	<tr><td style='white-space:nowrap;'>Description:</td><td>&nbsp;<input type='text' name='T8[descr]' value='Uploaded with Rapidleech.' style='width:160px;' /></td></tr>\n";
+	<tr><td style='white-space:nowrap;'>Description:</td><td>&nbsp;<input type='text' name='T8[descr]' value='Uploaded with hello.' style='width:160px;' /></td></tr>\n";
 	echo "<tr><td colspan='2' align='center'><br /><input type='submit' value='Upload' /></td></tr>\n";
 	echo "<tr><td colspan='2' align='center'><small>*You can set it as default in <b>".basename(__FILE__)."</b></small></td></tr>\n";
 	echo "</table>\n</form>\n";
@@ -73,7 +73,7 @@ if ($continue_up) {
 	$post = array();
 	$post['folder_id'] = 0;
 	if (!empty($_REQUEST['T8']['passw'])) $post['pass'] = $_REQUEST['T8']['passw'];
-	$post['info'] = !empty($_REQUEST['T8']['descr']) ? $_REQUEST['T8']['descr'] : 'Uploaded with Rapidleech.';
+	$post['info'] = !empty($_REQUEST['T8']['descr']) ? $_REQUEST['T8']['descr'] : 'Uploaded with hello.';
 	$post['agree'] = 'yes';
 
 	$up_url = $upUrl[1];

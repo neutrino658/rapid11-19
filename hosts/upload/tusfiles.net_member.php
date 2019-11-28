@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) exit;
+if (!defined('hello')) exit;
 $_T8 = array('v' => 3); // Version of this config file. (Do Not Edit)
 
 /* # Plugin's Settings # */
@@ -22,7 +22,7 @@ $acc_key_name = str_ireplace(array('www.', '.'), array('', '_'), $_T8['domain'])
 $upload_acc[$acc_key_name]['user'] = ''; //Set your login
 $upload_acc[$acc_key_name]['pass'] = ''; //Set your password
 
-if (!file_exists(HOST_DIR . 'upload/GenericXFSHost.inc.php')) html_error('Cannot load "'.htmlentities(HOST_DIR).'upload/GenericXFSHost.inc.php" (File doesn\'t exists), please install lastest version from: http://www.rapidleech.com/index.php/topic/14014-upload-plugin-for-sites-with-xfs-pro/ or http://pastebin.com/E0z7qMU1 ');
+if (!file_exists(HOST_DIR . 'upload/GenericXFSHost.inc.php')) html_error('Cannot load "'.htmlentities(HOST_DIR).'upload/GenericXFSHost.inc.php" (File doesn\'t exists), please install lastest version from: http://www.hello.com/index.php/topic/14014-upload-plugin-for-sites-with-xfs-pro/ or http://pastebin.com/E0z7qMU1 ');
 require(HOST_DIR . 'upload/GenericXFSHost.inc.php');
 
 // Written by Th3-822 - Last Update: [22-1-2014]

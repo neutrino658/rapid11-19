@@ -191,7 +191,7 @@ function check_errors($err, $prefix = 'Error') {
 	switch ($err) {
 		default: $msg = '*No message for this error*';break;
 		case -1: $msg = 'An internal error has occurred';break;
-		case -2: $msg = 'You have passed invalid arguments to this command, your rapidleech is outdated?';break;
+		case -2: $msg = 'You have passed invalid arguments to this command, your hello is outdated?';break;
 		case -3: $msg = 'A temporary congestion or server malfunction prevented your request from being processed';break;
 		case -4: $msg = 'You have exceeded your command weight per time quota. Please wait a few seconds, then try again';break;
 		case -5: $msg = 'The upload has failed';break;

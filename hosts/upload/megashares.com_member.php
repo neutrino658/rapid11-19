@@ -25,7 +25,7 @@ if ($upload_acc['megashares_com']['user'] && $upload_acc['megashares_com']['pass
 	$_REQUEST['up_pass'] = $upload_acc['megashares_com']['pass'];
 	$_REQUEST['action'] = 'FORM';
 	// Change settings here: (With default login enabled)
-	$_REQUEST['up_description'] = 'Uploaded with Rapidleech.'; // File Description.
+	$_REQUEST['up_description'] = 'Uploaded with hello.'; // File Description.
 	$_REQUEST['up_category'] = 'doc'; // File Category. You can use 'doc', 'video', 'application', 'music' or 'image'
 	$_REQUEST['up_lpassword'] = ''; // Link password.
 	$_REQUEST['up_searchable'] = 'yes'; // Make link searchable.
@@ -39,7 +39,7 @@ if (empty($_REQUEST['action']) || $_REQUEST['action'] != 'FORM') {
 	<tr><td style='white-space:nowrap;'>&nbsp;Username*</td><td>&nbsp;<input type='text' name='up_login' value='' style='width:160px;' /></td></tr>
 	<tr><td style='white-space:nowrap;'>&nbsp;Password*</td><td>&nbsp;<input type='password' name='up_pass' value='' style='width:160px;' /></td></tr>\n";
 	echo "\t<tr><td colspan='2' align='center'><br />Upload options*<br /><br /></td></tr>
-	<tr><td style='white-space:nowrap;'>File Description:</td><td>&nbsp;<input type='text' name='up_description' value='Uploaded with Rapidleech.' style='width:160px;' /></td></tr>
+	<tr><td style='white-space:nowrap;'>File Description:</td><td>&nbsp;<input type='text' name='up_description' value='Uploaded with hello.' style='width:160px;' /></td></tr>
 	<tr><td style='white-space:nowrap;'>Upload Category:</td><td>&nbsp;<select name='up_category' style='width:160px;height:20px;'>\n";
 	foreach($ftypes as $n => $v) echo "\t<option value='$n'>$v</option>\n";
 	echo "\t</select></td></tr>
@@ -97,7 +97,7 @@ if (empty($_REQUEST['action']) || $_REQUEST['action'] != 'FORM') {
 
 	$post['passProtectUpload'] = (!empty($_REQUEST['up_lpassword'])) ? $_REQUEST['up_lpassword'] : '';
 	$post['searchable'] = (!empty($_REQUEST['up_searchable']) && $_REQUEST['up_searchable'] == 'yes') ? 'yes' : 'no';
-	$post['uploadFileDescription'] = (!empty($_REQUEST['up_description']) ? $_REQUEST['up_description'] : 'Uploaded with Rapidleech.');
+	$post['uploadFileDescription'] = (!empty($_REQUEST['up_description']) ? $_REQUEST['up_description'] : 'Uploaded with hello.');
 	$post['uploadFileCategory'] = (!empty($_REQUEST['up_category']) && array_key_exists($_REQUEST['up_category'], $ftypes) ? $_REQUEST['up_category'] : 'doc');
 
 	//$post['checkTOS'] = '';
