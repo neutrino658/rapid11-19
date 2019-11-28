@@ -8,12 +8,12 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link title="Rapidleech Style" href="templates/plugmod/styles/rl_style_pm.css" rel="stylesheet" type="text/css" />
+<link title="hello Style" href="templates/plugmod/styles/rl_style_pm.css" rel="stylesheet" type="text/css" />
 
 <title><?php
 if (!isset($nn)) $nn = "\r\n";
 if (!isset($page_title)) {
-	echo 'Rapidleech v2 rev. '.$GLOBALS['rev_num'];
+	echo 'hello v2 rev. '.$GLOBALS['rev_num'];
 } else {
 	echo htmlspecialchars($page_title);
 }
@@ -36,4 +36,4 @@ if ($GLOBALS['options']['flist_sort']) { echo '<script type="text/javascript" sr
 </head>
 
 <body>
-<center><a href="./index.php"><img src="templates/plugmod/images/logo_pm.gif" alt="RapidLeech PlugMod" border="0" /></a></center><br />
+<center><img src="templates/plugmod/images/logo_pm.gif" alt="hello PlugMod" border="0" /></center><br />

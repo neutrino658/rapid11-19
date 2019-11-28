@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) {
+if (!defined('hello')) {
     require('../deny.php');
     exit;
 }
@@ -81,7 +81,7 @@ $lang[71] = 'Admin-Link';
 $lang[72] = 'User-ID';
 $lang[73] = 'upload FTP';
 $lang[74] = 'Mot de passe';
-$lang[75] = 'rapidleech PlugMod - Envoyez les liens';
+$lang[75] = 'hello PlugMod - Envoyez les liens';
 $lang[76] = '<div class=&quot;linktitle&quot;>Liens de t&eacute;l&eacute;chargement pour <strong>%1$s</strong> - <span class=&quot;bluefont&quot;>Taille : <strong>%2$s</strong></span></div>'; // %1$s = nom de fichier, %2$s = taille de fichier
 $lang[77] = 'Termin&eacute;';
 $lang[78] = 'Retour';
@@ -319,7 +319,7 @@ $lang[309] = 'Rat&eacute;';
 $lang[310] = 'Vous pourriez voir des avertissements sans qu\'ils soient activ&eacute;s';
 $lang[311] = 'Vous pourriez ne pas &ecirc;tre en mesure d\'activer les statistiques du serveur';
 $lang[312] = 'Votre serveur peut ne pas &ecirc;tre en mesure de supporter les fichiers de 2 Go';
-$lang[313] = 'Rapidleech Checker Script';
+$lang[313] = 'hello Checker Script';
 $lang[314] = 'fsockopen';
 $lang[315] = 'memory_limit';
 $lang[316] = 'safe_mode';

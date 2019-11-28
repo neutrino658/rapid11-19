@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) {
+if (!defined('hello')) {
     require('../deny.php');
     exit;
 }
@@ -81,7 +81,7 @@ $lang[71] = 'Admin-Link';
 $lang[72] = 'USER-ID';
 $lang[73] = 'FTP upload';
 $lang[74] = 'Senha';
-$lang[75] = 'Rapidleech PlugMod - Upload Links';
+$lang[75] = 'hello PlugMod - Upload Links';
 $lang[76] = '<div class="linktitle">Links para upload <strong>%1$s</strong> - <span class="bluefont">Tamanho: <strong>%2$s</strong></span></div>'; // %1$s = file name %2$s = file size
 $lang[77] = 'Conclu&iacute;do';
 $lang[78] = 'Voltar';
@@ -319,7 +319,7 @@ $lang[309] = 'Falhou';
 $lang[310] = 'Voc&ecirc; pode ver os avisos sem esta ligado';
 $lang[311] = 'Voc&ecirc; pode n&atilde;o ser capaz de transformar em estat&iacute;sticas do servidor';
 $lang[312] = 'O servidor pode n&atilde;o ser capaz de suportar arquivos com tamanho superior a 2GB';
-$lang[313] = 'Rapidleech Checker Script';
+$lang[313] = 'hello Checker Script';
 $lang[314] = 'fsockopen';
 $lang[315] = 'limite de mem&oacute;ria';
 $lang[316] = 'safe_mode';

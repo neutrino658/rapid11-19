@@ -1,5 +1,5 @@
 <?php
-if (!defined('RAPIDLEECH')) {
+if (!defined('hello')) {
   require('../deny.php');
   exit;
 }
@@ -79,7 +79,7 @@ $lang[71]       =       'Admin-Link';
 $lang[72]       =       'BENUTZER-ID';
 $lang[73]       =       'FTP-Upload';
 $lang[74]       =       'Passwort';
-$lang[75]       =       'Rapidleech PlugMod - Links Hochladen';
+$lang[75]       =       'hello PlugMod - Links Hochladen';
 $lang[76]       =       '<div class="linktitle">Lade Link hoch zu <strong>%1$s</strong> - <span class="bluefont">Gr&ouml;sse: <strong>%2$s</strong></span></div>';      // %1$s = Datei name %2$s = Datei Grösse
 $lang[77]       =       'ERLEDIGT';
 $lang[78]       =       'Zur&uuml;ck';
@@ -317,7 +317,7 @@ $lang[309]      =       'Gescheitert';
 $lang[310]      =       'Sie sehen m&ouml;glicherweise Warnungen, ohne diese Funktion eingeschaltet zu haben';
 $lang[311]      =       'Diese Info kannst du auf diesem Server evt. nicht ansehen.';
 $lang[312]      =       'Dein Server unterst&uuml;tzt m&ouml;glicherweise keine Dateien die gr&ouml;sser als 2GB sind';
-$lang[313]      =       'Rapidleech Check-Script';
+$lang[313]      =       'hello Check-Script';
 $lang[314]      =       'fsockopen';
 $lang[315]      =       'memory_limit';
 $lang[316]      =       'safe_mode';
@@ -347,7 +347,7 @@ $lang[339]      =       'Datei(en) entpacken (rar)';
 $lang[340]      =       'Fehler entdeckt';
 $lang[341]      =       'Klicken Sie hier, um zu erweitern';
 $lang[342]      =       'Fenster verschieben';
-$lang[343]      =       'Konnte "rar" nicht finden<br />Eventuell m&uuml;ssen Sie "plusrar" aus dem <a href="http://www.rapidleech.com/index.php/topic/4977-plusrar/"> Rapidleech-Forum</a> laden und in das Verzeichnis "/rar/" kopieren';
+$lang[343]      =       'Konnte "rar" nicht finden<br />Eventuell m&uuml;ssen Sie "plusrar" aus dem <a href="http://www.hello.com/index.php/topic/4977-plusrar/"> hello-Forum</a> laden und in das Verzeichnis "/rar/" kopieren';
 $lang[344]      =       'Zu verpackende Dateien:';
 $lang[345]      =       'Archivname:';
 $lang[346]      =       'Optionen:';

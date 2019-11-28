@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) {
+if (!defined('hello')) {
     require('../deny.php');
     exit;
 }
@@ -82,7 +82,7 @@ $lang[71] = 'Yönetici Bağlantısı';
 $lang[72] = 'Kullanıcı Adı';
 $lang[73] = 'FTP ile yükleme';
 $lang[74] = 'Şifre';
-$lang[75] = 'Rapidleech PlugMod - Upload Linkler';
+$lang[75] = 'hello PlugMod - Upload Linkler';
 $lang[76] = '<div class="linktitle">%1$s<strong> için upload linkleri </strong> - <span class="bluefont">Boyut: <strong>%2$s</strong></span></div>'; // %1$s = file name %2$s = file size
 $lang[77] = 'Tamamlandı';
 $lang[78] = 'Geri Dön';
@@ -320,7 +320,7 @@ $lang[309] = 'Başarısız';
 $lang[310] = 'You might see warnings without this turned on';
 $lang[311] = 'Server durumunu çalıştıramıyabilirsiniz.';
 $lang[312] = 'Serveriniz 2 gb dan büyük dosyaları desteklemiyor olabilir';
-$lang[313] = 'Rapidleech Kontrol Script';
+$lang[313] = 'hello Kontrol Script';
 $lang[314] = 'fsockopen';
 $lang[315] = 'memory_limit';
 $lang[316] = 'safe_mode';

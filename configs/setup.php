@@ -1,16 +1,16 @@
 <?php
 ////////////////////////////////////////////////////////////////////////////////
-//Rapidleech setup file
+//hello setup file
 //
-//If you need to do rapidleech setup again:
+//If you need to do hello setup again:
 // To load default config: delete 'configs/config.php'
 // To work on your old config: rename 'configs/config.php' to 'configs/config_old.php'
-// After that, go to your rapidleech url to access setup
+// After that, go to your hello url to access setup
 //
 ////////////////////////////////////////////////////////////////////////////////
 
 $PHP_SELF = $_SERVER['SCRIPT_NAME'];
-if (!defined('RAPIDLEECH')) define('RAPIDLEECH', 'yes');
+if (!defined('hello')) define('hello', 'yes');
 if (!defined('CONFIG_DIR')) define('CONFIG_DIR', 'configs/');
 
 //Default options file
@@ -36,9 +36,9 @@ require_once('classes/other.php');
 
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head><title>Rapidleech Setup</title>
+<head><title>hello Setup</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link title="Rapidleech Style" href="<?php echo TEMPLATE_DIR; ?>styles/rl_style_pm.css?<?php echo time(); ?>" rel="stylesheet" type="text/css" />
+<link title="Style" href="<?php echo TEMPLATE_DIR; ?>styles/rl_style_pm.css?<?php echo time(); ?>" rel="stylesheet" type="text/css" />
 <?php
 
 if (!isset($_POST['setup_save'])) {
@@ -204,7 +204,7 @@ $(document).ready(function() {
 </style>
 </head>
 <body>
-<center><img src="<?php echo TEMPLATE_DIR; ?>images/logo_pm.gif" alt="RapidLeech PlugMod" border="0" /></center>
+<center><img src="<?php echo TEMPLATE_DIR; ?>images/logo_pm.gif" alt="PlugMod" border="0" /></center>
 <br />
 <noscript><div class="div_error">This page won't work without JavaScript, please enable JavaScript and refresh the page.</div></noscript>
 <?php
@@ -261,17 +261,17 @@ if (isset($_POST['setup_save']) && $_POST['setup_save'] == 1) {
 
 	$opt = var_export($options, true);
 	$opt = (strpos($opt, "\r\n") === false ? str_replace(array("\r", "\n"), "\r\n", $opt) : $opt);
-	$opt = "<?php\r\nif (!defined('RAPIDLEECH')) {\r\n\trequire_once('index.html');\r\n\texit;\r\n}\r\n\r\n\$options = $opt; \r\n\r\nrequire_once('site_checker.php');\r\nrequire_once('accounts.php');\r\n\r\n\$secretkey =& \$options['secretkey'];\r\n?>";
+	$opt = "<?php\r\nif (!defined('hello')) {\r\n\trequire_once('index.html');\r\n\texit;\r\n}\r\n\r\n\$options = $opt; \r\n\r\nrequire_once('site_checker.php');\r\nrequire_once('accounts.php');\r\n\r\n\$secretkey =& \$options['secretkey'];\r\n?>";
 	if (!@write_file(CONFIG_DIR."config.php", $opt, 1)) echo '<div class="div_error">It was not possible to write the configuration<br />Set permissions of "configs" folder to 0777 and try again</div>';
 	else {
 		if (is_file(CONFIG_DIR.'config_old.php')) { if (@!unlink(CONFIG_DIR.'config_old.php') && is_file(CONFIG_DIR.'config_old.php')) { '<div class="div_message">It was not possible to delete the old configuration.<br />Manually delete "configs/config_old.php"</div><br />'; } }
-		echo '<div class="div_message">Configuration saved! Click <a href="'.$PHP_SELF.'">here</a> to continue to rapidleech</div>';
+		echo '<div class="div_message">Configuration saved! Click <a href="'.$PHP_SELF.'">here</a> to continue to hello</div>';
 	}
 } else {
 ?>
-<div class="div_setup">Rapidleech Setup</div>
+<div class="div_setup">hello Setup</div>
 
-<div class="div_message"><?php echo ($old_options ? 'Old' : 'Default'); ?> rapidleech options loaded</div>
+<div class="div_message"><?php echo ($old_options ? 'Old' : 'Default'); ?> hello options loaded</div>
 
 <form method="post" enctype="multipart/form-data" name="setup_form" action="<?php echo $PHP_SELF; ?>">
 <table align="center" class="table_cat">

@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) {
+if (!defined('hello')) {
     require('../deny.php');
     exit;
 }
@@ -81,7 +81,7 @@ $lang[71] = '管理员链接';
 $lang[72] = '用户名';
 $lang[73] = 'FTP上传';
 $lang[74] = '密码';
-$lang[75] = 'Rapidleech PlugMod - 上传链接';
+$lang[75] = 'hello PlugMod - 上传链接';
 $lang[76] = '<div class="linktitle">上传链接 <strong>%1$s</strong> - <span class="bluefont">大小： <strong>%2$s</strong></span></div> '; // %1$s = file name %2$s = file size
 $lang[77] = '完成';
 $lang[78] = '后退';
@@ -319,7 +319,7 @@ $lang[309] = '失败';
 $lang[310] = '没有开启这个你可能会收到警告';
 $lang[311] = '您可能无法查看服务器的信息';
 $lang[312] = '你的服务器可能不支持超过2G的文件';
-$lang[313] = 'Rapidleech检查脚本';
+$lang[313] = 'hello检查脚本';
 $lang[314] = 'fsockopen';
 $lang[315] = 'memory_limit';
 $lang[316] = 'safe_mode';
