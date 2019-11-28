@@ -9,9 +9,9 @@ if (top != self) {
 
 function new_transload_window() {
 	var tmp = (new Date()).getTime();
-	$('form[name=transload]').attr('target', 'rapidleech_' + tmp);
+	$('form[name=transload]').attr('target', 'hello_' + tmp);
 	var options = 'width=700,height=320,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,copyhistory=no';
-	window.open('', 'rapidleech_' + tmp, options);
+	window.open('', 'hello_' + tmp, options);
 	window.setTimeout('$(\'form[name=transload]\').submit();', 200);
 }
 

@@ -1,5 +1,5 @@
 <?php
-if (!defined('RAPIDLEECH')) {
+if (!defined('hello')) {
 	require('../deny.php');
 	exit;
 }
@@ -42,7 +42,7 @@ function login_check() {
 			unset($auth);
 		}
 		if (empty($_SERVER['PHP_AUTH_USER']) || !logged_user($options['users'])) {
-			header('WWW-Authenticate: Basic realm="RAPIDLEECH PLUGMOD"');
+			header('WWW-Authenticate: Basic realm="PLUGMOD"');
 			header('HTTP/1.0 401 Unauthorized');
 			include('deny.php');
 			exit;
@@ -473,7 +473,7 @@ function check_referer() {
 	// If there is a login on the referer, remove it.
 	$refhost = ($pos = strpos($refhost, '@')) !== false ? substr($refhost, $pos+1) : $refhost;
 
-	$whitelist = array($httphost, 'localhost', 'rapidleech.com');
+	$whitelist = array($httphost, 'localhost', 'hello.com');
 	$is_ext = ($refhost == $_SERVER['SERVER_ADDR'] ? false : true);
 	if ($is_ext)
 		foreach ($whitelist as $host)

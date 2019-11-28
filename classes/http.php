@@ -1,5 +1,5 @@
 <?php
-if (!defined('RAPIDLEECH')) {
+if (!defined('hello')) {
 	require('../deny.php');
 	exit();
 }
