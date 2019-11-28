@@ -2,7 +2,7 @@
 
 // ** VK (ВКонтакте) Upload Plugin by Th3-822 **
 // Create a Application at http://vk.com/editapp?act=create
-// Select "Web Site" and add your rapidleech url and the base domain.
+// Select "Web Site" and add your hello url and the base domain.
 // After creating the app, copy the Application ID and the Secret key. and add them at $app.
 
 ######## Plugin's Info ########
@@ -85,7 +85,7 @@ if (empty($_REQUEST['code'])) {
 		case 'video':
 			$data['method'] = 'video.save';
 			$data['name'] = $lname;
-			$data['description'] = 'Uploaded with Rapidleech';
+			$data['description'] = 'Uploaded with hello';
 			// $data['is_private'] = '1'; // Uncomment for upload videos as private. (Not Sure Yet How It Does Work)
 			// $data['group_id'] = 1234567890; // ID of the community. (Positive Number)
 			break;
@@ -138,7 +138,7 @@ if (empty($_REQUEST['code'])) {
 			case 'doc':
 				$data['method'] = 'docs.save';
 				$data['file'] = $upres['file'];
-				$data['tags'] = 'Rapidleech';
+				$data['tags'] = 'hello';
 				break;
 		}
 		$rply = vk_doApiReq($data);

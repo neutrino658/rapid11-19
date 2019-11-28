@@ -83,7 +83,7 @@ if (!$url = parse_url($upload_form)) html_error('Error getting upload url');
 			$fpost["freakshare"] = "on";
 			$fpost["mediafire"] = "on";
 			$fpost["extabit"] = "on";
-			$fpost["rapidleech"] = "on";
+			$fpost["hello"] = "on";
 $fpost["upload_button"] = "Upload";
 
 $url=parse_url($ref.'/enviar.php');

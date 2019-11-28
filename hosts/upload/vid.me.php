@@ -4,7 +4,7 @@
 	echo "<table style='width:600px;margin:auto;'>\n<tr><td align='center'>\n<div id='info' width='100%' align='center'>Retrive upload ID</div>\n";
 	$domain = 'vid.me';
 	$post['title'] = $lname;
-	$post['description'] =  'Uploaded with Rapidleech';
+	$post['description'] =  'Uploaded with hello';
 	$post['PLATFORM'] = 'web';
 	$post['source'] = 'computer';
 	$post['mode'] = 'chunked';

@@ -17,7 +17,7 @@ if ($upload_acc['wrzuta_pl']['user'] && $upload_acc['wrzuta_pl']['pass']){
 	// Set options for uploading with default login:
 	$_REQUEST['up_title'] = "$fname";
 	$_REQUEST['up_tags'] = "$fname";
-	$_REQUEST['up_description'] = 'Uploaded with Rapidleech';
+	$_REQUEST['up_description'] = 'Uploaded with hello';
 	$_REQUEST['up_category'] = 1; // Check $categories
 	$_REQUEST['up_adult'] = 'no';
 	$_REQUEST['up_private'] = 'no';
@@ -37,7 +37,7 @@ else{
 <tr><td colspan='2' align='center'><br />Upload options*<br /><br /></td></tr>
 <tr><td style='white-space:nowrap;'>Title:</td><td>&nbsp;<input type='text' name='up_title' value="<?php echo $fname ?>" style='width:160px;' /></td></tr>
 <tr><td style='white-space:nowrap;'>Tags:</td><td>&nbsp;<input type='text' name='up_tags' value="<?php echo $fname; ?>" style='width:160px;' /></td></tr>
-<tr><td style='white-space:nowrap;'>Description:</td><td>&nbsp;<input type='text' name='up_description' value='Uploaded with Rapidleech' style='width:160px;' /></td></tr>
+<tr><td style='white-space:nowrap;'>Description:</td><td>&nbsp;<input type='text' name='up_description' value='Uploaded with hello' style='width:160px;' /></td></tr>
 <tr><td style='white-space:nowrap;'>Category:</td><td>&nbsp;<select name='up_category' style='width:160px;height:20px;'>
 <?php foreach($categories as $v => $n) echo "<option value='$v'>$n</option>\n"; ?>
 </select></td></tr>
@@ -114,7 +114,7 @@ if ($continue_up)
 	$post['upload_file_name_0'] = !empty($_REQUEST['up_title']) ? urlencode($_REQUEST['up_title']) : urlencode($fname);
 	$post['upload_file_tags_0'] = !empty($_REQUEST['up_tags']) ? urlencode($_REQUEST['up_tags']) : urlencode($fname);
 	$post['upload_file_dir_key_0'] = 0;
-	$post['upload_file_desc_0'] = !empty($_REQUEST['up_description']) ? urlencode($_REQUEST['up_description']) : 'Uploaded+with+rapidleech';
+	$post['upload_file_desc_0'] = !empty($_REQUEST['up_description']) ? urlencode($_REQUEST['up_description']) : 'Uploaded+with+hello';
 	$post['id_subcategory_0'] = $post['id_category_0'] = (array_key_exists($_REQUEST['up_category'], $categories)) ? $_REQUEST['up_category'] : 1;
 	$post['upload_file_adults_0'] = ($_REQUEST['up_adult'] == 'yes') ? 1 : 0;
 	if ($login) $post['upload_file_private_0'] = ($_REQUEST['up_private'] == 'yes') ? 1 : 0;
