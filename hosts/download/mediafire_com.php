@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) {
+if (!defined('hello')) {
 	require_once('index.html');
 	exit;
 }
@@ -106,7 +106,7 @@ class mediafire_com extends DownloadClass {
 }
 
 /*
- * credit to farizemo [at] rapidleech forum
+ * credit to farizemo [at] hello forum
  * by vdhdevil
  * remove additional function for temporary fix until get finished - Ruud v.Tony 06-01-2011
  * fix for shared premium link by Ruud v.Tony 23-01-2012

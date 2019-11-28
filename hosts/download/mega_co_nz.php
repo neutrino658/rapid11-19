@@ -1,5 +1,5 @@
 <?php
-if (!defined('RAPIDLEECH')) {
+if (!defined('hello')) {
 	require_once('index.html');
 	exit;
 }
@@ -63,7 +63,7 @@ class mega_co_nz extends DownloadClass {
 			$page = cURL($link, 0, 0, 0, 0, array(CURLOPT_NOBODY => true));
 		} else if (function_exists('readCustomHeaders')) {
 			$page = $this->GetPage($link, 0, 0, "https://mega.nz/\r\n:HEAD " . parse_url($link, PHP_URL_PATH) . " HTTP/1.1");
-		} else html_error('Your rapidleech is outdated and doesn\'t support a required check.');
+		} else html_error('Your hello is outdated and doesn\'t support a required check.');
 		return (intval(substr($page, 9, 3)) == 509);
 	}
 
@@ -72,7 +72,7 @@ class mega_co_nz extends DownloadClass {
 		switch ($code) {
 			default: $msg = '*No message for this error*';break;
 			case -1: $msg = 'An internal error has occurred';break;
-			case -2: $msg = 'You have passed invalid arguments to this command, your rapidleech is outdated?';break;
+			case -2: $msg = 'You have passed invalid arguments to this command, your hello is outdated?';break;
 			case -3: $msg = 'A temporary congestion or server malfunction prevented your request from being processed';break;
 			case -4: $msg = 'You have exceeded your command weight per time quota. Please wait a few seconds, then try again';break;
 			case -9: $msg = ($isLogin ? 'Email/Password incorrect' : 'File/Folder not found');break;
@@ -274,7 +274,7 @@ class mega_co_nz extends DownloadClass {
 		}
 
 		global $fp, $sFilters;
-		if (empty($fp) || !is_resource($fp)) html_error("Error: Your rapidleech version is outdated and it doesn't support this plugin.");
+		if (empty($fp) || !is_resource($fp)) html_error("Error: Your hello version is outdated and it doesn't support this plugin.");
 		$this->checkCryptDependences();
 		if (!empty($_GET['T8']['fkey'])) $key = $this->base64_to_a32(urldecode($_GET['T8']['fkey']));
 		elseif (preg_match('@^(T8|N)?!([^!]{8})!([\w\-\,]{43})@i', parse_url($_GET['referer'], PHP_URL_FRAGMENT), $dat)) $key = $this->base64_to_a32($dat[2]);
@@ -326,7 +326,7 @@ class mega_co_nz extends DownloadClass {
 		uasort($dfiles, array($this, 'FSort'));
 
 		$files = array();
-		foreach ($dfiles as $file => $key) $files[] = "https://mega.nz/#N!$file!{$key['k']}!$fnid!Rapidleech";
+		foreach ($dfiles as $file => $key) $files[] = "https://mega.nz/#N!$file!{$key['k']}!$fnid!hello";
 		$this->moveToAutoDownloader($files);
 	}
 
@@ -522,8 +522,8 @@ class Th3822_MegaDlDecrypt_Old extends php_user_filter {
 	}
 }
 
-//[24-2-2013] Written by Th3-822. (Rapidleech r415 or newer required)
-//[02-3-2013] Added "checks" for validating rapidleech version & added 2 error msg. - Th3-822
+//[24-2-2013] Written by Th3-822. (hello r415 or newer required)
+//[02-3-2013] Added "checks" for validating hello version & added 2 error msg. - Th3-822
 //[27-3-2013] Simplified Stream decrypt function (The other one was not working well... After many tests looks like it's better now :D). - Th3-822
 //[20-7-2013] Fixed link regexp. - Th3-822
 //[09-8-2013] Added folder support and small fixes from upload plugin. (Download links that are fetched from a folder link are not public and only can be downloaded with this plugin.) - Th3-822

@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) {
+if (!defined('hello')) {
 	require_once('index.html');
 	exit();
 }
@@ -24,7 +24,7 @@ class bestreams_net extends GenericXFS_DL {
 		$this->Start($link);
 	}
 
-	// Rapidleech doesn't support rtmp, so i must get to the real file, that it's somewhere.
+	// hello doesn't support rtmp, so i must get to the real file, that it's somewhere.
 	protected function pageDecoder() {
 		if (preg_match('@(https?://(?:[\w\-]+\.)+[\w\-]+(?:\:\d+)?/)i/(?:[^/\s\"\'<>]+/)*\w{12}(_t)?\.jpe?g@i', $this->page, $SV) && preg_match('@[?&]h(?:ash)?=(\w+)@i', $this->page, $hash)) {
 			$DL = $SV[1] . $hash[1] . '/v.mp4'; // And that's how a XFS video download link is forged.
